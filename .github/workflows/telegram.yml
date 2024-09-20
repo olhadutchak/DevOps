@@ -1,6 +1,9 @@
 name: Notify Telegram on PR
 on:
   pull_request:
+    branches:
+      - main
+      - develop
     types: [opened, closed]
 jobs:
   notify:
